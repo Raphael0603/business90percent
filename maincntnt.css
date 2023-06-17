@@ -1,0 +1,204 @@
+* {
+    background-color: rgb(227, 231, 230);
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+
+.cntnt-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: calc(25% - 3px); /* Adjust the width of the boxes */
+    height: 250px;
+    background-color: rgb(86, 133, 133);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin-right: 3px; /* Add space between the boxes */
+}
+
+@keyframes boxAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.box:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+    animation-play-state: paused;
+}
+
+.additional-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.additional-boxes .box {
+    width: calc(25% - 3px); /* Adjust the width of the boxes */
+    height: 250px;
+    background-color: rgb(86, 133, 133);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin-right: 3px; /* Add space between the boxes */
+}
+
+.additional-boxes .box:hover {
+    box-shadow:0 15px 15px rgba(0, 0, 0, 0.2);
+    animation-play-state: paused;
+}
+
+.more-boxes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.more-boxes .box{
+    width: calc(25% - 3px); /* Adjust the width of the boxes */
+    height: 250px;
+    background-color: rgb(86, 133, 133);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin-right: 3px; /* Add space between the boxes */
+}
+.more-boxes .box:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+    animation-play-state: paused;
+}
+
+.header{
+    font-family: sans-serif;
+}
+
+.cntnt-container .box #sample{
+    width: 100%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    
+}
+
+
+.cntnt-container .box .paragraph{
+    background: none;
+}
+
+.cntnt-container .box .paragraph #text1{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+    background: none;
+    font-family: Georgia;
+    color: aliceblue;
+}
+.cntnt-container .box .header3{
+    background: none;
+}
+
+.cntnt-container .box .header3 #h3{
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+    background: none;
+    font-family: Georgia;
+    color: aliceblue;
+}
+
+.additional-boxes .box #sample{
+    width: 100%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    
+}
+
+
+.additional-boxes .box .paragraph{
+    background: none;
+}
+
+.additional-boxes .box .paragraph #text1{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+    background: none;
+    font-family: Georgia;
+    color: aliceblue;
+}
+.additional-boxes .box .header3{
+    background: none;
+}
+
+.additional-boxes .box .header3 #h3{
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+    background: none;
+    font-family: Georgia;
+    color: aliceblue;
+}
+
+.navbar1{
+    width: 85%;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar1 ul li{
+    list-style: none;
+    display: inline-block;
+    /* margin: 30 25px; */
+    position: relative;
+    margin-left: 25px;
+
+}
+
+.navbar1 ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    color: #080808;
+}
+
+.navbar1 ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #a4a38b;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: 0.5s;
+}
+.navbar1 ul li:hover:after{
+    width: 100%;
+}

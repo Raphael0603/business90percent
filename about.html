@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Section Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(227, 231, 230);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .back-button {
+            width: 100px;
+            height: 25px;
+            background-color: #a4a38b;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact</h1>
+        <img src="images/contact.jpg" alt="Construction Image">
+    </div>
+    
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Our construction business was founded during the pandemic and has overcome many challenges. We have adapted and persevered with determination. The health and safety of our employees and clients are a top priority, and we strictly follow protocols to ensure a safe working environment. Our team has embraced innovation and technology, enabling us to deliver outstanding construction projects. We are proud to contribute to the economy by creating jobs and supporting local suppliers. With unwavering commitment to excellence, we are optimistic about the future and excited to contribute to the growth and development of our communities.</p>
+    </div>
+
+    <div class="container">
+        <h1>Description</h1>
+        <p>A construction business is an important part of a successful economy, helping to build roads, buildings, and cities. Our company is proud of its expertise and professionalism, always striving to deliver high-quality projects that exceed client expectations. We have skilled workers and use advanced technology to ensure safety and efficiency. Whether it's commercial or residential projects, our dedicated team works hard to complete each job successfully and build strong relationships with clients. We value honesty and pay attention to every detail, aiming to create structures that last and improve communities.</p>
+    </div>
+
+    <div class="container">
+        <button class="back-button" onclick="redirectToLoggedIn()">Back</button>
+    </div>
+
+    <script>
+        function redirectToLoggedIn() {
+            window.location.href = "loggedin.html";
+        }
+    </script>
+</body>
+</html>

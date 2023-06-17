@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/MRA-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #a4a38b;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.background .name {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    font-style: italic;
+}
+
+.content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100%;
+    line-height: 25px;
+    font-size: 150%;
+}
+
+.background .btn1 #btn-one {
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #a4a38b;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #a4a38b;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+.simp-vid {
+    position: fixed;
+    right: 350px;
+    bottom: 10px;
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.background .btn2 {
+    margin-top: auto;
+}
+
+.background .navbar #btn-two {
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    background: transparent;
+    border: 0px;
+    flex-direction: column;
+    margin-left: 20%;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.background .navbar #btn-two:hover {
+    color: rgb(167, 209, 89);
+}
+
+.background .LogIn {
+    background-color: white;
+    border-color: white;
+    box-shadow: 0 0 8px black;
+    width: 420px;
+    height: 500px;
+    display: flex;
+    border-radius: 8px;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+}
+
+.background .LogIn #txt1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    margin-left: 185px;
+    margin-top: 40px;
+}
+
+.background .LogIn #txt2 {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    margin-left: 110px;
+    margin-top: 396px;
+}
+
+.background .SignUp {
+    background-color: white;
+    border-color: white;
+    box-shadow: 0 0 8px black;
+    width: 420px;
+    height: 500px;
+    display: flex;
+    border-radius: 8px;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+}
+
+.background .LogIn .back #btn-three {
+    color: rgb(12, 12, 12);
+    width: 100px;
+    height: 30px;
+    border-radius: 0px;
+    background: transparent;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 345px;
+    position: fixed;
+}
+
+.background .LogIn .back #btn-three:hover {
+    color: red;
+}
+
+.background .LogIn .sign-updirect #btn-four {
+    color: rgb(86, 107, 231);
+    width: 100px;
+    height: 30px;
+    border-radius: 0px;
+    background: transparent;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-top: 386px;
+    margin-left: 220px;
+    position: fixed;
+}
+
+.background .LogIn .sign-updirect #btn-four:hover {
+    color: blue;
+}
+
+.background .signUp-main {
+    background-color: white;
+    border-color: white;
+    box-shadow: 0 0 8px black;
+    width: 420px;
+    height: 500px;
+    display: flex;
+    border-radius: 8px;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+}
+
+.background .signUp-main .back2 #btn-five {
+    color: rgb(12, 12, 12);
+    width: 100px;
+    height: 30px;
+    border-radius: 0px;
+    background: transparent;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 345px;
+    position: fixed;
+}
+
+.background .signUp-main .back2 #btn-five:hover {
+    color: red;
+}
+
+.background .signUp-main #txt3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    margin-left: 185px;
+    margin-top: 40px;
+}
+
+.background .signUp-main #txt4 {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    margin-left: 110px;
+    margin-top: 420px;
+}
+
+.background .signUp-main .gotologin #btn-six {
+    color: rgb(86, 107, 231);
+    width: 100px;
+    height: 30px;
+    border-radius: 0px;
+    background: transparent;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-top: 410px;
+    margin-left: 210px;
+    position: fixed;
+}
+
+.background .signUp-main .gotologin #btn-six:hover {
+    color: blue;
+}
+
+.background .LogIn .email {
+    position: fixed;
+    margin-top: 125px;
+    margin-left: 20px;
+}
+
+.background .LogIn .email form .form-control {
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid silver;
+    margin: 10px 120 18px 0;
+    padding: 0 10px;
+}
+
+.background .LogIn .email form .btn7 {
+    margin-left: 190px;
+    margin-top: 25px;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 34px;
+    border: none;
+    outline: none;
+    background: rgb(69, 212, 69);
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.background .signUp-main .signupp {
+    position: fixed;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.background .signUp-main .signupp form .form-control2 {
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid silver;
+    margin: 10px 65 18px 0;
+    padding: 0 10px;
+}
+
+.background .signUp-main .signupp form .btn8 {
+    margin-left: 190px;
+    margin-top: 5px;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 34px;
+    border: none;
+    outline: none;
+    background: rgb(69, 212, 69);
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar ul li {
+        margin: 10px;
+    }
+
+    .content {
+        top: 40%;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .content p {
+        font-size: 120%;
+    }
+
+    .background .simp-vid {
+        right: 10px;
+    }
+}
+
+/* Styles for screens between 601px and 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar ul li {
+        margin: 15px;
+    }
+
+    .content {
+        top: 50%;
+    }
+
+    .content h1 {
+        font-size: 60px;
+        margin-top: 70px;
+    }
+
+    .content p {
+        font-size: 130%;
+    }
+
+    .background .simp-vid {
+        right: 50px;
+    }
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <div class="over-all">
+    <div class="container">
+        <h1 id="h1-login">Login</h1>
+        <form id="loginForm">
+            <label id="label-loginusrnm" for="username"> Username</label>
+            <input id="username" type="text" name="usertoget" placeholder="Enter your username" required>
+
+            <label id="label-loginpass" for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter your password" required>
+            <button id="button-login" type="submit" >Log In</button>
+        </form>
+        <div class="btn-container">
+        <div class="bckBtn"><button id="back-btn" type="submit" onclick="backtohome()">← BACK</button></div>
+        <div class="createBtn"><button id="create-btn" type="submit" onclick="createAccount()">CREATE ACCOUNT</button></div>
+        <div class="frgtBtn"><button id="frgt-btn" type="submit" onclick="forgotPassword()">Forgot password</button></div>
+    </div>
+    </div>
+</div>
+
+<script src="function.js"></script>
+<script src="login.js"></script>
+</body>
+</html>

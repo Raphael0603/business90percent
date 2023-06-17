@@ -1,0 +1,44 @@
+<html>
+    <head> 
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <title>My Business Website</title>
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <div class="background"> 
+
+            <div class="simp-vid">
+            <video autoplay loop id="bg-vid" width="420" height="250" controls>
+                <source src="images/Home Construction - 1 Year in 1 Minute (4K).mp4" type="video/mp4">
+
+              </video>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="loggedin.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="content.html">Finished Projects</a></li>
+                    <li><a href="content.html">Interior Projects</a></li>
+                    <li><a href="content.html">External Projects</a></li>
+                </ul>
+                <div class="btn2" id="signup" style="display: flex;">
+                    <p id="user-logged" style="color: white;">Welcome: </p><p id="user-here" style="color: white;">user</p><button style="margin-left: 5px;" id="btn-one" onclick="loggedOut()"><span></span>LOG OUT</button>
+            </div>
+            
+            <div class="content">
+                <h1> MRA Construction</h1>
+                <p>Quality and Time matters.</p>
+                <div class="btn1">
+                    <button id="btn-one" onclick="build()"><span></span>BUILD NOW</button>
+                </div>
+            </div>
+            <div class="name">
+                <p>Made by Raphael Albiso using reference.</p>
+            </div>
+
+        </div>
+        <script src="function.js"> </script>
+        <script src="login.js"> </script>
+    </body>
+</html>
